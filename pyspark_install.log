@@ -1,0 +1,1200 @@
+Collecting pyspark
+  Downloading pyspark-4.2.0.tar.gz (450.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 450.1/450.1 MB 3.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting py4j<0.10.9.10,>=0.10.9.7
+  Downloading py4j-0.10.9.9-py2.py3-none-any.whl (203 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 203.0/203.0 KB 6.1 MB/s eta 0:00:00
+Building wheels for collected packages: pyspark
+  Building wheel for pyspark (setup.py): started
+  Building wheel for pyspark (setup.py): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × python setup.py bdist_wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [784 lines of output]
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib
+      creating build/lib/pyspark
+      copying pyspark/statcounter.py -> build/lib/pyspark
+      copying pyspark/daemon.py -> build/lib/pyspark
+      copying pyspark/threaddump.py -> build/lib/pyspark
+      copying pyspark/profiler.py -> build/lib/pyspark
+      copying pyspark/shuffle.py -> build/lib/pyspark
+      copying pyspark/_globals.py -> build/lib/pyspark
+      copying pyspark/loose_version.py -> build/lib/pyspark
+      copying pyspark/install.py -> build/lib/pyspark
+      copying pyspark/conf.py -> build/lib/pyspark
+      copying pyspark/serializers.py -> build/lib/pyspark
+      copying pyspark/taskcontext.py -> build/lib/pyspark
+      copying pyspark/find_spark_home.py -> build/lib/pyspark
+      copying pyspark/version.py -> build/lib/pyspark
+      copying pyspark/worker.py -> build/lib/pyspark
+      copying pyspark/storagelevel.py -> build/lib/pyspark
+      copying pyspark/accumulators.py -> build/lib/pyspark
+      copying pyspark/worker_util.py -> build/lib/pyspark
+      copying pyspark/java_gateway.py -> build/lib/pyspark
+      copying pyspark/join.py -> build/lib/pyspark
+      copying pyspark/shell.py -> build/lib/pyspark
+      copying pyspark/traceback_utils.py -> build/lib/pyspark
+      copying pyspark/__init__.py -> build/lib/pyspark
+      copying pyspark/instrumentation_utils.py -> build/lib/pyspark
+      copying pyspark/memory_profiler_ext.py -> build/lib/pyspark
+      copying pyspark/rddsampler.py -> build/lib/pyspark
+      copying pyspark/resultiterable.py -> build/lib/pyspark
+      copying pyspark/errors_doc_gen.py -> build/lib/pyspark
+      copying pyspark/util.py -> build/lib/pyspark
+      creating build/lib/pyspark/core
+      copying pyspark/core/status.py -> build/lib/pyspark/core
+      copying pyspark/core/files.py -> build/lib/pyspark/core
+      copying pyspark/core/context.py -> build/lib/pyspark/core
+      copying pyspark/core/broadcast.py -> build/lib/pyspark/core
+      copying pyspark/core/rdd.py -> build/lib/pyspark/core
+      copying pyspark/core/__init__.py -> build/lib/pyspark/core
+      creating build/lib/pyspark/cloudpickle
+      copying pyspark/cloudpickle/cloudpickle_fast.py -> build/lib/pyspark/cloudpickle
+      copying pyspark/cloudpickle/__init__.py -> build/lib/pyspark/cloudpickle
+      copying pyspark/cloudpickle/cloudpickle.py -> build/lib/pyspark/cloudpickle
+      creating build/lib/pyspark/mllib
+      copying pyspark/mllib/clustering.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/tree.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/evaluation.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/feature.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/classification.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/recommendation.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/fpm.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/common.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/__init__.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/random.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/regression.py -> build/lib/pyspark/mllib
+      copying pyspark/mllib/util.py -> build/lib/pyspark/mllib
+      creating build/lib/pyspark/mllib/linalg
+      copying pyspark/mllib/linalg/distributed.py -> build/lib/pyspark/mllib/linalg
+      copying pyspark/mllib/linalg/__init__.py -> build/lib/pyspark/mllib/linalg
+      creating build/lib/pyspark/mllib/stat
+      copying pyspark/mllib/stat/test.py -> build/lib/pyspark/mllib/stat
+      copying pyspark/mllib/stat/KernelDensity.py -> build/lib/pyspark/mllib/stat
+      copying pyspark/mllib/stat/distribution.py -> build/lib/pyspark/mllib/stat
+      copying pyspark/mllib/stat/__init__.py -> build/lib/pyspark/mllib/stat
+      copying pyspark/mllib/stat/_statistics.py -> build/lib/pyspark/mllib/stat
+      creating build/lib/pyspark/ml
+      copying pyspark/ml/stat.py -> build/lib/pyspark/ml
+      copying pyspark/ml/wrapper.py -> build/lib/pyspark/ml
+      copying pyspark/ml/clustering.py -> build/lib/pyspark/ml
+      copying pyspark/ml/tree.py -> build/lib/pyspark/ml
+      copying pyspark/ml/evaluation.py -> build/lib/pyspark/ml
+      copying pyspark/ml/base.py -> build/lib/pyspark/ml
+      copying pyspark/ml/model_cache.py -> build/lib/pyspark/ml
+      copying pyspark/ml/feature.py -> build/lib/pyspark/ml
+      copying pyspark/ml/image.py -> build/lib/pyspark/ml
+      copying pyspark/ml/dl_util.py -> build/lib/pyspark/ml
+      copying pyspark/ml/functions.py -> build/lib/pyspark/ml
+      copying pyspark/ml/classification.py -> build/lib/pyspark/ml
+      copying pyspark/ml/tuning.py -> build/lib/pyspark/ml
+      copying pyspark/ml/recommendation.py -> build/lib/pyspark/ml
+      copying pyspark/ml/fpm.py -> build/lib/pyspark/ml
+      copying pyspark/ml/common.py -> build/lib/pyspark/ml
+      copying pyspark/ml/pipeline.py -> build/lib/pyspark/ml
+      copying pyspark/ml/__init__.py -> build/lib/pyspark/ml
+      copying pyspark/ml/regression.py -> build/lib/pyspark/ml
+      copying pyspark/ml/util.py -> build/lib/pyspark/ml
+      creating build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/readwrite.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/proto.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/serialize.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/evaluation.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/base.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/feature.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/functions.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/classification.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/tuning.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/io_utils.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/summarizer.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/pipeline.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/__init__.py -> build/lib/pyspark/ml/connect
+      copying pyspark/ml/connect/util.py -> build/lib/pyspark/ml/connect
+      creating build/lib/pyspark/ml/linalg
+      copying pyspark/ml/linalg/__init__.py -> build/lib/pyspark/ml/linalg
+      creating build/lib/pyspark/ml/param
+      copying pyspark/ml/param/_shared_params_code_gen.py -> build/lib/pyspark/ml/param
+      copying pyspark/ml/param/shared.py -> build/lib/pyspark/ml/param
+      copying pyspark/ml/param/__init__.py -> build/lib/pyspark/ml/param
+      creating build/lib/pyspark/ml/torch
+      copying pyspark/ml/torch/torch_run_process_wrapper.py -> build/lib/pyspark/ml/torch
+      copying pyspark/ml/torch/distributor.py -> build/lib/pyspark/ml/torch
+      copying pyspark/ml/torch/log_communication.py -> build/lib/pyspark/ml/torch
+      copying pyspark/ml/torch/data.py -> build/lib/pyspark/ml/torch
+      copying pyspark/ml/torch/__init__.py -> build/lib/pyspark/ml/torch
+      creating build/lib/pyspark/ml/deepspeed
+      copying pyspark/ml/deepspeed/deepspeed_distributor.py -> build/lib/pyspark/ml/deepspeed
+      copying pyspark/ml/deepspeed/__init__.py -> build/lib/pyspark/ml/deepspeed
+      creating build/lib/pyspark/sql
+      copying pyspark/sql/column.py -> build/lib/pyspark/sql
+      copying pyspark/sql/types.py -> build/lib/pyspark/sql
+      copying pyspark/sql/table_arg.py -> build/lib/pyspark/sql
+      copying pyspark/sql/readwriter.py -> build/lib/pyspark/sql
+      copying pyspark/sql/profiler.py -> build/lib/pyspark/sql
+      copying pyspark/sql/datasource_internal.py -> build/lib/pyspark/sql
+      copying pyspark/sql/geo_utils.py -> build/lib/pyspark/sql
+      copying pyspark/sql/tvf.py -> build/lib/pyspark/sql
+      copying pyspark/sql/datasource.py -> build/lib/pyspark/sql
+      copying pyspark/sql/udtf.py -> build/lib/pyspark/sql
+      copying pyspark/sql/sql_formatter.py -> build/lib/pyspark/sql
+      copying pyspark/sql/context.py -> build/lib/pyspark/sql
+      copying pyspark/sql/utils.py -> build/lib/pyspark/sql
+      copying pyspark/sql/conf.py -> build/lib/pyspark/sql
+      copying pyspark/sql/observation.py -> build/lib/pyspark/sql
+      copying pyspark/sql/conversion.py -> build/lib/pyspark/sql
+      copying pyspark/sql/metrics.py -> build/lib/pyspark/sql
+      copying pyspark/sql/catalog.py -> build/lib/pyspark/sql
+      copying pyspark/sql/internal.py -> build/lib/pyspark/sql
+      copying pyspark/sql/merge.py -> build/lib/pyspark/sql
+      copying pyspark/sql/dataframe.py -> build/lib/pyspark/sql
+      copying pyspark/sql/window.py -> build/lib/pyspark/sql
+      copying pyspark/sql/session.py -> build/lib/pyspark/sql
+      copying pyspark/sql/udf.py -> build/lib/pyspark/sql
+      copying pyspark/sql/variant_utils.py -> build/lib/pyspark/sql
+      copying pyspark/sql/tvf_argument.py -> build/lib/pyspark/sql
+      copying pyspark/sql/interchange.py -> build/lib/pyspark/sql
+      copying pyspark/sql/__init__.py -> build/lib/pyspark/sql
+      copying pyspark/sql/group.py -> build/lib/pyspark/sql
+      creating build/lib/pyspark/sql/avro
+      copying pyspark/sql/avro/functions.py -> build/lib/pyspark/sql/avro
+      copying pyspark/sql/avro/__init__.py -> build/lib/pyspark/sql/avro
+      creating build/lib/pyspark/sql/classic
+      copying pyspark/sql/classic/column.py -> build/lib/pyspark/sql/classic
+      copying pyspark/sql/classic/table_arg.py -> build/lib/pyspark/sql/classic
+      copying pyspark/sql/classic/dataframe.py -> build/lib/pyspark/sql/classic
+      copying pyspark/sql/classic/window.py -> build/lib/pyspark/sql/classic
+      copying pyspark/sql/classic/__init__.py -> build/lib/pyspark/sql/classic
+      creating build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/column.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/types.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/table_arg.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/plan.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/readwriter.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/profiler.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/tvf.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/datasource.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/udtf.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/sql_formatter.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/utils.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/conf.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/observation.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/conversion.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/catalog.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/merge.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/dataframe.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/window.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/session.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/udf.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/logging.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/_typing.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/expressions.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/__init__.py -> build/lib/pyspark/sql/connect
+      copying pyspark/sql/connect/group.py -> build/lib/pyspark/sql/connect
+      creating build/lib/pyspark/sql/connect/avro
+      copying pyspark/sql/connect/avro/functions.py -> build/lib/pyspark/sql/connect/avro
+      copying pyspark/sql/connect/avro/__init__.py -> build/lib/pyspark/sql/connect/avro
+      creating build/lib/pyspark/sql/connect/client
+      copying pyspark/sql/connect/client/core.py -> build/lib/pyspark/sql/connect/client
+      copying pyspark/sql/connect/client/artifact.py -> build/lib/pyspark/sql/connect/client
+      copying pyspark/sql/connect/client/__init__.py -> build/lib/pyspark/sql/connect/client
+      copying pyspark/sql/connect/client/reattach.py -> build/lib/pyspark/sql/connect/client
+      copying pyspark/sql/connect/client/retries.py -> build/lib/pyspark/sql/connect/client
+      creating build/lib/pyspark/sql/connect/functions
+      copying pyspark/sql/connect/functions/builtin.py -> build/lib/pyspark/sql/connect/functions
+      copying pyspark/sql/connect/functions/__init__.py -> build/lib/pyspark/sql/connect/functions
+      copying pyspark/sql/connect/functions/partitioning.py -> build/lib/pyspark/sql/connect/functions
+      creating build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/expressions_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/catalog_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/example_plugins_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/pipelines_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/base_pb2_grpc.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/commands_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/base_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/relations_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/ml_common_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/common_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/ml_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/types_pb2.py -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/__init__.py -> build/lib/pyspark/sql/connect/proto
+      creating build/lib/pyspark/sql/connect/protobuf
+      copying pyspark/sql/connect/protobuf/functions.py -> build/lib/pyspark/sql/connect/protobuf
+      copying pyspark/sql/connect/protobuf/__init__.py -> build/lib/pyspark/sql/connect/protobuf
+      creating build/lib/pyspark/sql/connect/resource
+      copying pyspark/sql/connect/resource/profile.py -> build/lib/pyspark/sql/connect/resource
+      copying pyspark/sql/connect/resource/__init__.py -> build/lib/pyspark/sql/connect/resource
+      creating build/lib/pyspark/sql/connect/shell
+      copying pyspark/sql/connect/shell/progress.py -> build/lib/pyspark/sql/connect/shell
+      copying pyspark/sql/connect/shell/__init__.py -> build/lib/pyspark/sql/connect/shell
+      creating build/lib/pyspark/sql/connect/streaming
+      copying pyspark/sql/connect/streaming/readwriter.py -> build/lib/pyspark/sql/connect/streaming
+      copying pyspark/sql/connect/streaming/query.py -> build/lib/pyspark/sql/connect/streaming
+      copying pyspark/sql/connect/streaming/__init__.py -> build/lib/pyspark/sql/connect/streaming
+      creating build/lib/pyspark/sql/connect/streaming/worker
+      copying pyspark/sql/connect/streaming/worker/listener_worker.py -> build/lib/pyspark/sql/connect/streaming/worker
+      copying pyspark/sql/connect/streaming/worker/foreach_batch_worker.py -> build/lib/pyspark/sql/connect/streaming/worker
+      copying pyspark/sql/connect/streaming/worker/__init__.py -> build/lib/pyspark/sql/connect/streaming/worker
+      creating build/lib/pyspark/sql/functions
+      copying pyspark/sql/functions/builtin.py -> build/lib/pyspark/sql/functions
+      copying pyspark/sql/functions/__init__.py -> build/lib/pyspark/sql/functions
+      copying pyspark/sql/functions/partitioning.py -> build/lib/pyspark/sql/functions
+      creating build/lib/pyspark/sql/pandas
+      copying pyspark/sql/pandas/types.py -> build/lib/pyspark/sql/pandas
+      copying pyspark/sql/pandas/typehints.py -> build/lib/pyspark/sql/pandas
+      copying pyspark/sql/pandas/utils.py -> build/lib/pyspark/sql/pandas
+      copying pyspark/sql/pandas/serializers.py -> build/lib/pyspark/sql/pandas
+      copying pyspark/sql/pandas/conversion.py -> build/lib/pyspark/sql/pandas
+      copying pyspark/sql/pandas/functions.py -> build/lib/pyspark/sql/pandas
+      copying pyspark/sql/pandas/group_ops.py -> build/lib/pyspark/sql/pandas
+      copying pyspark/sql/pandas/map_ops.py -> build/lib/pyspark/sql/pandas
+      copying pyspark/sql/pandas/__init__.py -> build/lib/pyspark/sql/pandas
+      creating build/lib/pyspark/sql/plot
+      copying pyspark/sql/plot/plotly.py -> build/lib/pyspark/sql/plot
+      copying pyspark/sql/plot/core.py -> build/lib/pyspark/sql/plot
+      copying pyspark/sql/plot/__init__.py -> build/lib/pyspark/sql/plot
+      creating build/lib/pyspark/sql/protobuf
+      copying pyspark/sql/protobuf/functions.py -> build/lib/pyspark/sql/protobuf
+      copying pyspark/sql/protobuf/__init__.py -> build/lib/pyspark/sql/protobuf
+      creating build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/python_streaming_source_runner.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/value_state_client.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/readwriter.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/map_state_client.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/query.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/stateful_processor_util.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/listener.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/stateful_processor.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/datasource.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/tws_tester.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/transform_with_state_driver_worker.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/list_state_client.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/state.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/stateful_processor_api_client.py -> build/lib/pyspark/sql/streaming
+      copying pyspark/sql/streaming/__init__.py -> build/lib/pyspark/sql/streaming
+      creating build/lib/pyspark/sql/streaming/proto
+      copying pyspark/sql/streaming/proto/StateMessage_pb2.py -> build/lib/pyspark/sql/streaming/proto
+      copying pyspark/sql/streaming/proto/__init__.py -> build/lib/pyspark/sql/streaming/proto
+      creating build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/python_streaming_sink_runner.py -> build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/data_source_pushdown_filters.py -> build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/plan_data_source_read.py -> build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/create_data_source.py -> build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/commit_data_source_write.py -> build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/analyze_udtf.py -> build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/utils.py -> build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/lookup_data_sources.py -> build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/__init__.py -> build/lib/pyspark/sql/worker
+      copying pyspark/sql/worker/write_into_data_source.py -> build/lib/pyspark/sql/worker
+      creating build/lib/pyspark/streaming
+      copying pyspark/streaming/kinesis.py -> build/lib/pyspark/streaming
+      copying pyspark/streaming/listener.py -> build/lib/pyspark/streaming
+      copying pyspark/streaming/context.py -> build/lib/pyspark/streaming
+      copying pyspark/streaming/dstream.py -> build/lib/pyspark/streaming
+      copying pyspark/streaming/__init__.py -> build/lib/pyspark/streaming
+      copying pyspark/streaming/util.py -> build/lib/pyspark/streaming
+      package init file 'deps/bin/__init__.py' not found (or not a regular file)
+      package init file 'deps/sbin/__init__.py' not found (or not a regular file)
+      package init file 'deps/jars/__init__.py' not found (or not a regular file)
+      creating build/lib/pyspark/pandas
+      copying pyspark/pandas/config.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/supported_api_gen.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/groupby.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/mlflow.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/series.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/frame.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/extensions.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/accessors.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/generic.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/correlation.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/base.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/indexing.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/sql_formatter.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/utils.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/resample.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/namespace.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/testing.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/datetimes.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/numpy_compat.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/internal.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/window.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/_typing.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/sql_processor.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/strings.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/__init__.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/exceptions.py -> build/lib/pyspark/pandas
+      copying pyspark/pandas/categorical.py -> build/lib/pyspark/pandas
+      creating build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/categorical_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/timedelta_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/binary_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/boolean_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/base.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/complex_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/num_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/datetime_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/null_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/udt_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/date_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/__init__.py -> build/lib/pyspark/pandas/data_type_ops
+      copying pyspark/pandas/data_type_ops/string_ops.py -> build/lib/pyspark/pandas/data_type_ops
+      creating build/lib/pyspark/pandas/indexes
+      copying pyspark/pandas/indexes/base.py -> build/lib/pyspark/pandas/indexes
+      copying pyspark/pandas/indexes/datetimes.py -> build/lib/pyspark/pandas/indexes
+      copying pyspark/pandas/indexes/multi.py -> build/lib/pyspark/pandas/indexes
+      copying pyspark/pandas/indexes/timedelta.py -> build/lib/pyspark/pandas/indexes
+      copying pyspark/pandas/indexes/category.py -> build/lib/pyspark/pandas/indexes
+      copying pyspark/pandas/indexes/__init__.py -> build/lib/pyspark/pandas/indexes
+      creating build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/groupby.py -> build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/series.py -> build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/frame.py -> build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/indexes.py -> build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/resample.py -> build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/window.py -> build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/scalars.py -> build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/general_functions.py -> build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/common.py -> build/lib/pyspark/pandas/missing
+      copying pyspark/pandas/missing/__init__.py -> build/lib/pyspark/pandas/missing
+      creating build/lib/pyspark/pandas/plot
+      copying pyspark/pandas/plot/plotly.py -> build/lib/pyspark/pandas/plot
+      copying pyspark/pandas/plot/core.py -> build/lib/pyspark/pandas/plot
+      copying pyspark/pandas/plot/__init__.py -> build/lib/pyspark/pandas/plot
+      copying pyspark/pandas/plot/matplotlib.py -> build/lib/pyspark/pandas/plot
+      creating build/lib/pyspark/pandas/spark
+      copying pyspark/pandas/spark/accessors.py -> build/lib/pyspark/pandas/spark
+      copying pyspark/pandas/spark/utils.py -> build/lib/pyspark/pandas/spark
+      copying pyspark/pandas/spark/__init__.py -> build/lib/pyspark/pandas/spark
+      creating build/lib/pyspark/pandas/typedef
+      copying pyspark/pandas/typedef/typehints.py -> build/lib/pyspark/pandas/typedef
+      copying pyspark/pandas/typedef/__init__.py -> build/lib/pyspark/pandas/typedef
+      creating build/lib/pyspark/pandas/usage_logging
+      copying pyspark/pandas/usage_logging/__init__.py -> build/lib/pyspark/pandas/usage_logging
+      copying pyspark/pandas/usage_logging/usage_logger.py -> build/lib/pyspark/pandas/usage_logging
+      creating build/lib/pyspark/pipelines
+      copying pyspark/pipelines/block_session_mutations.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/cli.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/spark_connect_graph_element_registry.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/graph_element_registry.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/spark_connect_pipeline.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/output.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/type_error_utils.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/init_cli.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/add_pipeline_analysis_context.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/source_code_location.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/api.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/flow.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/__init__.py -> build/lib/pyspark/pipelines
+      copying pyspark/pipelines/logging_utils.py -> build/lib/pyspark/pipelines
+      package init file 'pyspark/python/pyspark/__init__.py' not found (or not a regular file)
+      creating build/lib/pyspark/python
+      creating build/lib/pyspark/python/pyspark
+      copying pyspark/python/pyspark/shell.py -> build/lib/pyspark/python/pyspark
+      package init file 'lib/__init__.py' not found (or not a regular file)
+      creating build/lib/pyspark/testing
+      copying pyspark/testing/unittestutils.py -> build/lib/pyspark/testing
+      copying pyspark/testing/connectutils.py -> build/lib/pyspark/testing
+      copying pyspark/testing/goldenutils.py -> build/lib/pyspark/testing
+      copying pyspark/testing/streamingutils.py -> build/lib/pyspark/testing
+      copying pyspark/testing/utils.py -> build/lib/pyspark/testing
+      copying pyspark/testing/sqlutils.py -> build/lib/pyspark/testing
+      copying pyspark/testing/pandasutils.py -> build/lib/pyspark/testing
+      copying pyspark/testing/mlutils.py -> build/lib/pyspark/testing
+      copying pyspark/testing/__init__.py -> build/lib/pyspark/testing
+      copying pyspark/testing/mllibutils.py -> build/lib/pyspark/testing
+      copying pyspark/testing/objects.py -> build/lib/pyspark/testing
+      package init file 'deps/data/__init__.py' not found (or not a regular file)
+      package init file 'deps/licenses/__init__.py' not found (or not a regular file)
+      creating build/lib/pyspark/resource
+      copying pyspark/resource/profile.py -> build/lib/pyspark/resource
+      copying pyspark/resource/information.py -> build/lib/pyspark/resource
+      copying pyspark/resource/__init__.py -> build/lib/pyspark/resource
+      copying pyspark/resource/requests.py -> build/lib/pyspark/resource
+      creating build/lib/pyspark/errors
+      copying pyspark/errors/utils.py -> build/lib/pyspark/errors
+      copying pyspark/errors/error_classes.py -> build/lib/pyspark/errors
+      copying pyspark/errors/__init__.py -> build/lib/pyspark/errors
+      creating build/lib/pyspark/errors/exceptions
+      copying pyspark/errors/exceptions/tblib.py -> build/lib/pyspark/errors/exceptions
+      copying pyspark/errors/exceptions/base.py -> build/lib/pyspark/errors/exceptions
+      copying pyspark/errors/exceptions/connect.py -> build/lib/pyspark/errors/exceptions
+      copying pyspark/errors/exceptions/__init__.py -> build/lib/pyspark/errors/exceptions
+      copying pyspark/errors/exceptions/captured.py -> build/lib/pyspark/errors/exceptions
+      creating build/lib/pyspark/examples
+      creating build/lib/pyspark/examples/src
+      creating build/lib/pyspark/examples/src/main
+      creating build/lib/pyspark/examples/src/main/python
+      copying deps/examples/kmeans.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/logistic_regression.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/status_api_demo.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/pi.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/transitive_closure.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/parquet_inputformat.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/als.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/pagerank.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/sort.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/avro_inputformat.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/__init__.py -> build/lib/pyspark/examples/src/main/python
+      copying deps/examples/wordcount.py -> build/lib/pyspark/examples/src/main/python
+      creating build/lib/pyspark/logger
+      copying pyspark/logger/worker_io.py -> build/lib/pyspark/logger
+      copying pyspark/logger/logger.py -> build/lib/pyspark/logger
+      copying pyspark/logger/__init__.py -> build/lib/pyspark/logger
+      running egg_info
+      writing pyspark.egg-info/PKG-INFO
+      writing dependency_links to pyspark.egg-info/dependency_links.txt
+      writing requirements to pyspark.egg-info/requires.txt
+      writing top-level names to pyspark.egg-info/top_level.txt
+      reading manifest file 'pyspark.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+      warning: no previously-included files matching '__pycache__' found anywhere in distribution
+      warning: no previously-included files matching '.DS_Store' found anywhere in distribution
+      adding license file 'LICENSE'
+      adding license file 'NOTICE'
+      writing manifest file 'pyspark.egg-info/SOURCES.txt'
+      copying pyspark/_typing.pyi -> build/lib/pyspark
+      copying pyspark/py.typed -> build/lib/pyspark
+      copying pyspark/mllib/_typing.pyi -> build/lib/pyspark/mllib
+      copying pyspark/ml/_typing.pyi -> build/lib/pyspark/ml
+      copying pyspark/sql/_typing.pyi -> build/lib/pyspark/sql
+      copying pyspark/sql/connect/proto/base_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/catalog_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/commands_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/common_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/example_plugins_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/expressions_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/ml_common_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/ml_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/pipelines_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/relations_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/connect/proto/types_pb2.pyi -> build/lib/pyspark/sql/connect/proto
+      copying pyspark/sql/pandas/functions.pyi -> build/lib/pyspark/sql/pandas
+      creating build/lib/pyspark/sql/pandas/_typing
+      copying pyspark/sql/pandas/_typing/__init__.pyi -> build/lib/pyspark/sql/pandas/_typing
+      creating build/lib/pyspark/sql/pandas/_typing/protocols
+      copying pyspark/sql/pandas/_typing/protocols/__init__.pyi -> build/lib/pyspark/sql/pandas/_typing/protocols
+      copying pyspark/sql/pandas/_typing/protocols/frame.pyi -> build/lib/pyspark/sql/pandas/_typing/protocols
+      copying pyspark/sql/pandas/_typing/protocols/series.pyi -> build/lib/pyspark/sql/pandas/_typing/protocols
+      copying pyspark/sql/streaming/proto/StateMessage_pb2.pyi -> build/lib/pyspark/sql/streaming/proto
+      creating build/lib/pyspark/bin
+      copying deps/bin/beeline -> build/lib/pyspark/bin
+      copying deps/bin/beeline.cmd -> build/lib/pyspark/bin
+      copying deps/bin/docker-image-tool.sh -> build/lib/pyspark/bin
+      copying deps/bin/find-spark-home -> build/lib/pyspark/bin
+      copying deps/bin/find-spark-home.cmd -> build/lib/pyspark/bin
+      copying deps/bin/load-spark-env.cmd -> build/lib/pyspark/bin
+      copying deps/bin/load-spark-env.sh -> build/lib/pyspark/bin
+      copying deps/bin/pyspark -> build/lib/pyspark/bin
+      copying deps/bin/pyspark.cmd -> build/lib/pyspark/bin
+      copying deps/bin/pyspark2.cmd -> build/lib/pyspark/bin
+      copying deps/bin/run-example -> build/lib/pyspark/bin
+      copying deps/bin/run-example.cmd -> build/lib/pyspark/bin
+      copying deps/bin/spark-class -> build/lib/pyspark/bin
+      copying deps/bin/spark-class.cmd -> build/lib/pyspark/bin
+      copying deps/bin/spark-class2.cmd -> build/lib/pyspark/bin
+      copying deps/bin/spark-connect-shell -> build/lib/pyspark/bin
+      copying deps/bin/spark-pipelines -> build/lib/pyspark/bin
+      copying deps/bin/spark-shell -> build/lib/pyspark/bin
+      copying deps/bin/spark-shell.cmd -> build/lib/pyspark/bin
+      copying deps/bin/spark-shell2.cmd -> build/lib/pyspark/bin
+      copying deps/bin/spark-sql -> build/lib/pyspark/bin
+      copying deps/bin/spark-sql.cmd -> build/lib/pyspark/bin
+      copying deps/bin/spark-sql2.cmd -> build/lib/pyspark/bin
+      copying deps/bin/spark-submit -> build/lib/pyspark/bin
+      copying deps/bin/spark-submit.cmd -> build/lib/pyspark/bin
+      copying deps/bin/spark-submit2.cmd -> build/lib/pyspark/bin
+      copying deps/bin/sparkR -> build/lib/pyspark/bin
+      copying deps/bin/sparkR.cmd -> build/lib/pyspark/bin
+      copying deps/bin/sparkR2.cmd -> build/lib/pyspark/bin
+      creating build/lib/pyspark/sbin
+      copying deps/sbin/spark-config.sh -> build/lib/pyspark/sbin
+      copying deps/sbin/spark-daemon.sh -> build/lib/pyspark/sbin
+      copying deps/sbin/start-history-server.sh -> build/lib/pyspark/sbin
+      copying deps/sbin/stop-history-server.sh -> build/lib/pyspark/sbin
+      creating build/lib/pyspark/jars
+      copying deps/jars/HikariCP-2.5.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/JLargeArrays-1.5.jar -> build/lib/pyspark/jars
+      copying deps/jars/JTransforms-3.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/RoaringBitmap-1.6.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/ST4-4.0.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/aircompressor-2.0.3.jar -> build/lib/pyspark/jars
+      copying deps/jars/algebra_2.13-2.8.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/antlr-runtime-3.5.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/antlr4-runtime-4.13.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/aopalliance-repackaged-3.0.6.jar -> build/lib/pyspark/jars
+      copying deps/jars/arpack-3.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/arpack_combined_all-0.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/arrow-compression-19.0.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/arrow-format-19.0.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/arrow-memory-core-19.0.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/arrow-memory-netty-19.0.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/arrow-memory-netty-buffer-patch-19.0.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/arrow-vector-19.0.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/audience-annotations-0.12.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/avro-1.12.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/avro-ipc-1.12.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/avro-mapred-1.12.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/blas-3.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/breeze-macros_2.13-2.1.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/breeze_2.13-2.1.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/cats-kernel_2.13-2.8.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/chill-java-0.10.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/chill_2.13-0.10.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-cli-1.11.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-codec-1.22.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-collections4-4.5.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-compiler-3.1.9.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-compress-1.28.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-crypto-1.1.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-dbcp-1.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-io-2.22.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-lang-2.6.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-lang3-3.20.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-math3-3.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-pool-1.5.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/commons-text-1.15.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/compress-lzf-1.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/curator-client-5.9.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/curator-framework-5.9.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/curator-recipes-5.9.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/datanucleus-api-jdo-4.2.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/datanucleus-core-4.1.17.jar -> build/lib/pyspark/jars
+      copying deps/jars/datanucleus-rdbms-4.1.19.jar -> build/lib/pyspark/jars
+      copying deps/jars/datasketches-java-6.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/datasketches-memory-3.0.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/derby-10.16.1.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/derbyshared-10.16.1.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/derbytools-10.16.1.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/dropwizard-metrics-hadoop-metrics2-reporter-0.1.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/failureaccess-1.0.3.jar -> build/lib/pyspark/jars
+      copying deps/jars/flatbuffers-java-25.2.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/gson-2.13.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/guava-33.6.0-jre.jar -> build/lib/pyspark/jars
+      copying deps/jars/hadoop-client-api-3.5.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/hadoop-client-runtime-3.5.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-beeline-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-cli-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-common-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-exec-2.3.10-core.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-jdbc-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-metastore-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-serde-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-service-rpc-4.0.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-shims-0.23-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-shims-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-shims-common-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-shims-scheduler-2.3.10.jar -> build/lib/pyspark/jars
+      copying deps/jars/hive-storage-api-2.8.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/hk2-api-3.0.6.jar -> build/lib/pyspark/jars
+      copying deps/jars/hk2-locator-3.0.6.jar -> build/lib/pyspark/jars
+      copying deps/jars/hk2-utils-3.0.6.jar -> build/lib/pyspark/jars
+      copying deps/jars/httpclient-4.5.14.jar -> build/lib/pyspark/jars
+      copying deps/jars/httpcore-4.4.16.jar -> build/lib/pyspark/jars
+      copying deps/jars/icu4j-78.3.jar -> build/lib/pyspark/jars
+      copying deps/jars/istack-commons-runtime-4.1.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/ivy-2.5.3.jar -> build/lib/pyspark/jars
+      copying deps/jars/jackson-annotations-2.21.jar -> build/lib/pyspark/jars
+      copying deps/jars/jackson-core-2.21.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/jackson-databind-2.21.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/jackson-dataformat-yaml-2.21.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/jackson-datatype-jsr310-2.21.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/jackson-module-scala_2.13-2.21.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/jakarta.activation-api-2.1.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/jakarta.annotation-api-2.1.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/jakarta.inject-api-2.0.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/jakarta.servlet-api-6.0.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/jakarta.validation-api-3.0.2.jar -> build/lib/pyspark/jars
+      copying deps/jars/jakarta.ws.rs-api-3.1.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/jakarta.xml.bind-api-4.0.5.jar -> build/lib/pyspark/jars
+      copying deps/jars/janino-3.1.9.jar -> build/lib/pyspark/jars
+      copying deps/jars/java-diff-utils-4.16.jar -> build/lib/pyspark/jars
+      copying deps/jars/javassist-3.30.2-GA.jar -> build/lib/pyspark/jars
+      copying deps/jars/javax.jdo-3.2.0-m3.jar -> build/lib/pyspark/jars
+      copying deps/jars/javax.servlet-api-4.0.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/javolution-5.5.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/jaxb-core-4.0.6.jar -> build/lib/pyspark/jars
+      copying deps/jars/jaxb-runtime-4.0.6.jar -> build/lib/pyspark/jars
+      copying deps/jars/jcl-over-slf4j-2.0.17.jar -> build/lib/pyspark/jars
+      copying deps/jars/jdo-api-3.0.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/jersey-client-3.1.11.jar -> build/lib/pyspark/jars
+      copying deps/jars/jersey-common-3.1.11.jar -> build/lib/pyspark/jars
+      copying deps/jars/jersey-container-servlet-3.1.11.jar -> build/lib/pyspark/jars
+      copying deps/jars/jersey-container-servlet-core-3.1.11.jar -> build/lib/pyspark/jars
+      copying deps/jars/jersey-hk2-3.1.11.jar -> build/lib/pyspark/jars
+      copying deps/jars/jersey-server-3.1.11.jar -> build/lib/pyspark/jars
+      copying deps/jars/jjwt-api-0.13.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/jjwt-impl-0.13.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/jjwt-jackson-0.13.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/jline-2.14.6.jar -> build/lib/pyspark/jars
+      copying deps/jars/jline-3.29.0-jdk8.jar -> build/lib/pyspark/jars
+      copying deps/jars/joda-time-2.14.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/jpam-1.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/json-1.8.jar -> build/lib/pyspark/jars
+      copying deps/jars/json4s-ast_2.13-4.0.7.jar -> build/lib/pyspark/jars
+      copying deps/jars/json4s-core_2.13-4.0.7.jar -> build/lib/pyspark/jars
+      copying deps/jars/json4s-jackson-core_2.13-4.0.7.jar -> build/lib/pyspark/jars
+      copying deps/jars/json4s-jackson_2.13-4.0.7.jar -> build/lib/pyspark/jars
+      copying deps/jars/json4s-scalap_2.13-4.0.7.jar -> build/lib/pyspark/jars
+      copying deps/jars/jsr305-3.0.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/jta-1.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/jts-core-1.20.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/jul-to-slf4j-2.0.17.jar -> build/lib/pyspark/jars
+      copying deps/jars/kryo-shaded-4.0.3.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-client-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-client-api-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-httpclient-vertx-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-admissionregistration-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-apiextensions-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-apps-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-autoscaling-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-batch-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-certificates-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-common-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-coordination-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-core-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-discovery-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-events-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-extensions-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-flowcontrol-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-gatewayapi-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-metrics-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-networking-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-node-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-policy-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-rbac-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-resource-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-scheduling-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/kubernetes-model-storageclass-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/lapack-3.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/leveldbjni-all-1.8.jar -> build/lib/pyspark/jars
+      copying deps/jars/libfb303-0.9.3.jar -> build/lib/pyspark/jars
+      copying deps/jars/libthrift-0.16.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/log4j-1.2-api-2.25.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/log4j-api-2.25.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/log4j-core-2.25.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/log4j-layout-template-json-2.25.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/log4j-slf4j2-impl-2.25.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/lz4-java-1.11.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/metrics-core-4.2.37.jar -> build/lib/pyspark/jars
+      copying deps/jars/metrics-graphite-4.2.37.jar -> build/lib/pyspark/jars
+      copying deps/jars/metrics-jmx-4.2.37.jar -> build/lib/pyspark/jars
+      copying deps/jars/metrics-json-4.2.37.jar -> build/lib/pyspark/jars
+      copying deps/jars/metrics-jvm-4.2.37.jar -> build/lib/pyspark/jars
+      copying deps/jars/minlog-1.3.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-all-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-buffer-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-codec-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-codec-base-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-codec-compression-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-codec-dns-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-codec-http-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-codec-http2-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-codec-socks-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-common-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-handler-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-handler-proxy-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-resolver-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-resolver-dns-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-tcnative-boringssl-static-2.0.76.Final-linux-aarch_64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-tcnative-boringssl-static-2.0.76.Final-linux-x86_64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-tcnative-boringssl-static-2.0.76.Final-osx-aarch_64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-tcnative-boringssl-static-2.0.76.Final-osx-x86_64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-tcnative-boringssl-static-2.0.76.Final-windows-x86_64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-tcnative-classes-2.0.76.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-transport-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-transport-classes-epoll-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-transport-classes-kqueue-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-transport-native-epoll-4.2.13.Final-linux-aarch_64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-transport-native-epoll-4.2.13.Final-linux-riscv64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-transport-native-epoll-4.2.13.Final-linux-x86_64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-transport-native-kqueue-4.2.13.Final-osx-aarch_64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-transport-native-kqueue-4.2.13.Final-osx-x86_64.jar -> build/lib/pyspark/jars
+      copying deps/jars/netty-transport-native-unix-common-4.2.13.Final.jar -> build/lib/pyspark/jars
+      copying deps/jars/objenesis-3.5.jar -> build/lib/pyspark/jars
+      copying deps/jars/opencsv-2.3.jar -> build/lib/pyspark/jars
+      copying deps/jars/orc-core-2.3.0-shaded-protobuf.jar -> build/lib/pyspark/jars
+      copying deps/jars/orc-format-1.1.1-shaded-protobuf.jar -> build/lib/pyspark/jars
+      copying deps/jars/orc-mapreduce-2.3.0-shaded-protobuf.jar -> build/lib/pyspark/jars
+      copying deps/jars/orc-shims-2.3.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/oro-2.0.8.jar -> build/lib/pyspark/jars
+      copying deps/jars/osgi-resource-locator-1.0.3.jar -> build/lib/pyspark/jars
+      copying deps/jars/paranamer-2.8.3.jar -> build/lib/pyspark/jars
+      copying deps/jars/parquet-column-1.17.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/parquet-common-1.17.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/parquet-encoding-1.17.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/parquet-format-structures-1.17.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/parquet-hadoop-1.17.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/parquet-jackson-1.17.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/pickle-1.5.jar -> build/lib/pyspark/jars
+      copying deps/jars/py4j-0.10.9.9.jar -> build/lib/pyspark/jars
+      copying deps/jars/rocksdbjni-9.8.4.jar -> build/lib/pyspark/jars
+      copying deps/jars/scala-compiler-2.13.18.jar -> build/lib/pyspark/jars
+      copying deps/jars/scala-library-2.13.18.jar -> build/lib/pyspark/jars
+      copying deps/jars/scala-parallel-collections_2.13-1.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/scala-parser-combinators_2.13-2.4.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/scala-reflect-2.13.18.jar -> build/lib/pyspark/jars
+      copying deps/jars/scala-xml_2.13-2.4.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/slf4j-api-2.0.17.jar -> build/lib/pyspark/jars
+      copying deps/jars/snakeyaml-2.5.jar -> build/lib/pyspark/jars
+      copying deps/jars/snakeyaml-engine-3.0.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/snappy-java-1.1.10.8.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-catalyst_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-common-utils-java_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-common-utils_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-connect_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-core_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-graphx_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-hive-thriftserver_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-hive_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-kubernetes_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-kvstore_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-launcher_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-mllib-local_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-mllib_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-network-common_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-network-shuffle_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-pipelines_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-repl_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-sketch_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-sql-api_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-sql_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-streaming_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-tags_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-unsafe_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-variant_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spark-yarn_2.13-4.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spire-macros_2.13-0.18.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spire-platform_2.13-0.18.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spire-util_2.13-0.18.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/spire_2.13-0.18.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/stax-api-1.0.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/stream-2.9.8.jar -> build/lib/pyspark/jars
+      copying deps/jars/super-csv-2.2.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/threeten-extra-1.8.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/tink-1.20.0.jar -> build/lib/pyspark/jars
+      copying deps/jars/transaction-api-1.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/univocity-parsers-2.9.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/vertx-auth-common-4.5.26.jar -> build/lib/pyspark/jars
+      copying deps/jars/vertx-core-4.5.26.jar -> build/lib/pyspark/jars
+      copying deps/jars/vertx-uri-template-4.5.26.jar -> build/lib/pyspark/jars
+      copying deps/jars/vertx-web-client-4.5.26.jar -> build/lib/pyspark/jars
+      copying deps/jars/vertx-web-common-4.5.26.jar -> build/lib/pyspark/jars
+      copying deps/jars/volcano-client-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/volcano-model-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/xbean-asm9-shaded-4.30.jar -> build/lib/pyspark/jars
+      copying deps/jars/xmlschema-core-2.3.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/xz-1.12.jar -> build/lib/pyspark/jars
+      copying deps/jars/zjsonpatch-7.6.1.jar -> build/lib/pyspark/jars
+      copying deps/jars/zookeeper-3.9.5.jar -> build/lib/pyspark/jars
+      copying deps/jars/zookeeper-jute-3.9.5.jar -> build/lib/pyspark/jars
+      copying deps/jars/zstd-jni-1.5.7-7.jar -> build/lib/pyspark/jars
+      creating build/lib/pyspark/jars/connect-repl
+      copying deps/jars/connect-repl/ammonite-compiler-interface_2.13.18-3.0.8.jar -> build/lib/pyspark/jars/connect-repl
+      error: could not write to 'build/lib/pyspark/jars/connect-repl/ammonite-compiler-interface_2.13.18-3.0.8.jar': Read-only file system
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pyspark
+  Running setup.py clean for pyspark
+  error: subprocess-exited-with-error
+  
+  × python setup.py clean did not run successfully.
+  │ exit code: 1
+  ╰─> [27 lines of output]
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-kju5p4h7/pyspark_49549a91273f488faed54eace7ad742d/setup.py", line 214, in <module>
+          copyfile("pyspark/shell.py", "pyspark/python/pyspark/shell.py")
+        File "/usr/lib/python3.10/shutil.py", line 256, in copyfile
+      OSError: [Errno 30] Read-only file system: 'pyspark/python/pyspark/shell.py'
+      Error in sys.excepthook:
+      Traceback (most recent call last):
+        File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 72, in apport_excepthook
+        File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+        File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+        File "<frozen importlib._bootstrap>", line 945, in _find_spec
+        File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+        File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+        File "<frozen importlib._bootstrap_external>", line 1548, in find_spec
+        File "<frozen importlib._bootstrap_external>", line 1591, in _fill_cache
+      OSError: [Errno 5] Input/output error: '/usr/lib/python3/dist-packages/apport'
+      
+      Original exception was:
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-kju5p4h7/pyspark_49549a91273f488faed54eace7ad742d/setup.py", line 214, in <module>
+          copyfile("pyspark/shell.py", "pyspark/python/pyspark/shell.py")
+        File "/usr/lib/python3.10/shutil.py", line 256, in copyfile
+      OSError: [Errno 30] Read-only file system: 'pyspark/python/pyspark/shell.py'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed cleaning build dir for pyspark
+ERROR: Could not install packages due to an OSError: [Errno 30] Read-only file system: '/tmp/pip-wheel-gfa_5a1x'
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 34, in global_tempdir_manager
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/req/req_tracker.py", line 44, in get_requirement_tracker
+  File "/usr/lib/python3.10/contextlib.py", line 576, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 731, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 729, in rmtree
+OSError: [Errno 30] Read-only file system: '/tmp/pip-req-tracker-7_r5t7pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 731, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 729, in rmtree
+OSError: [Errno 30] Read-only file system: '/tmp/pip-unpack-ufowi6pr'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'py4j-0.10.9.9-py2.py3-none-any.whl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'dependency_links.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'pyspark-4.2.0.tar.gz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'setup.cfg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'setup.cfg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/usr/lib/python3/dist-packages/pip/__main__.py", line 31, in <module>
+  File "/usr/lib/python3/dist-packages/pip/_internal/cli/main.py", line 70, in main
+  File "/usr/lib/python3/dist-packages/pip/_internal/cli/base_command.py", line 98, in main
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/cli/command_context.py", line 19, in main_context
+  File "/usr/lib/python3.10/contextlib.py", line 576, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 70, in tempdir_registry
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 31, in global_tempdir_manager
+  File "/usr/lib/python3.10/contextlib.py", line 576, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  [Previous line repeated 1 more time]
+  File "/usr/lib/python3.10/shutil.py", line 664, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 662, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'd68dfc2b0937579aca242a796b173ced82a3100451811219ab'
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 72, in apport_excepthook
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1548, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1591, in _fill_cache
+OSError: [Errno 5] Input/output error: '/usr/lib/python3/dist-packages/apport'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 34, in global_tempdir_manager
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/req/req_tracker.py", line 44, in get_requirement_tracker
+  File "/usr/lib/python3.10/contextlib.py", line 576, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 731, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 729, in rmtree
+OSError: [Errno 30] Read-only file system: '/tmp/pip-req-tracker-7_r5t7pk'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 731, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 729, in rmtree
+OSError: [Errno 30] Read-only file system: '/tmp/pip-unpack-ufowi6pr'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'py4j-0.10.9.9-py2.py3-none-any.whl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'dependency_links.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'pyspark-4.2.0.tar.gz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'setup.cfg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'setup.cfg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/usr/lib/python3/dist-packages/pip/__main__.py", line 31, in <module>
+  File "/usr/lib/python3/dist-packages/pip/_internal/cli/main.py", line 70, in main
+  File "/usr/lib/python3/dist-packages/pip/_internal/cli/base_command.py", line 98, in main
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/cli/command_context.py", line 19, in main_context
+  File "/usr/lib/python3.10/contextlib.py", line 576, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 70, in tempdir_registry
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 31, in global_tempdir_manager
+  File "/usr/lib/python3.10/contextlib.py", line 576, in __exit__
+  File "/usr/lib/python3.10/contextlib.py", line 561, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 156, in __exit__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/temp_dir.py", line 173, in cleanup
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 326, in wrapped_f
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 406, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 362, in iter
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 195, in reraise
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+  File "/usr/lib/python3/dist-packages/pip/_vendor/tenacity/__init__.py", line 409, in __call__
+  File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 124, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 658, in _rmtree_safe_fd
+  [Previous line repeated 1 more time]
+  File "/usr/lib/python3.10/shutil.py", line 664, in _rmtree_safe_fd
+  File "/usr/lib/python3.10/shutil.py", line 662, in _rmtree_safe_fd
+OSError: [Errno 30] Read-only file system: 'd68dfc2b0937579aca242a796b173ced82a3100451811219ab'
